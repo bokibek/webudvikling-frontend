@@ -1,7 +1,7 @@
 export default function AboutPage() {
   return (
-    <body className="page">
-      <section className="about-us-page">
+    <section className="page">
+      <article>
         <h1>About Us</h1>
         <p>
           At our shop, we provide you with an excellent shopping experience as
@@ -23,7 +23,7 @@ export default function AboutPage() {
           check the availability of an item, please use the “Contact Us” page to
           get in touch.
         </p>
-      </section>
-    </body>
+      </article>
+    </section>
   );
 }

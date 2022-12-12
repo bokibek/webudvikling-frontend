@@ -2,15 +2,30 @@ import { useNavigate } from "react-router-dom"; //useNavigate til at navigere ti
 
 export default function ProductAdmin({ product }) {
   const navigate = useNavigate();
+  const url = `https://eksamens-projekt-d596b-default-rtdb.europe-west1.firebasedatabase.app/product/${product.id}.json`;
   // product is a prop containing product data
 
   function showUpdate() {
     navigate(`/admin/update/${product.id}`);
   }
 
-  function showDelete() {
-    navigate(`/admin/delete/${product.id}`);
-  }
+    function showDeleteDialog() {
+      const shouldDelete = window.confirm(
+        `Do you want to delete "${product.title}"?`
+      );
+      if (shouldDelete) {
+        deleteProduct();
+      }
+    }
+
+    async function deleteProduct() {
+      const response = await fetch(url, { method: "DELETE" });
+
+      if (response.ok) {
+        navigate("/admin/"); // navigate back to home page
+      }
+    }
+
 
   return (
     <article>
@@ -18,7 +33,7 @@ export default function ProductAdmin({ product }) {
       <h2>{product.title}</h2>
       <p>DKK {product.price},-</p>
       <button onClick={showUpdate} id="update-btn">Update</button>
-      <button onClick={showDelete} id="delete-btn">Delete</button>
+      <button onClick={showDeleteDialog} id="delete-btn">Delete</button>
     </article>
   );
 }

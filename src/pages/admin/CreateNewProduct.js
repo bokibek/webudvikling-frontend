@@ -32,29 +32,31 @@ export default function CreateNewProduct() {
 
   return (
     <section className="page">
-      <h1>Add New Product</h1>
-      <form onSubmit={createProduct}>
-        <input
-          type="text"
-          value={title}
-          placeholder="Type a title"
-          onChange={(e) => setTitle(e.target.value)}
-        />
-        <input
-          type="text"
-          value={price}
-          placeholder="Type a price"
-          onChange={(e) => setPrice(e.target.value)}
-        />
-        <input
-          type="url"
-          value={image}
-          placeholder="Add image URL"
-          onChange={(e) => setImage(e.target.value)}
-        />
-        {image && <img className="image-preview" src={image} alt="Choose" />}
-        <button>Save</button>
-      </form>
+      <article>
+        <h1>Add New Product</h1>
+        <form onSubmit={createProduct}>
+          <input
+            type="text"
+            value={title}
+            placeholder="Type a title"
+            onChange={(e) => setTitle(e.target.value)}
+          />
+          <input
+            type="text"
+            value={price}
+            placeholder="Type a price"
+            onChange={(e) => setPrice(e.target.value)}
+          />
+          <input
+            type="url"
+            value={image}
+            placeholder="Add image URL"
+            onChange={(e) => setImage(e.target.value)}
+          />
+          {image && <img className="image-preview" src={image} alt="Choose" />}
+          <button>Save</button>
+        </form>
+      </article>
     </section>
   );
 }

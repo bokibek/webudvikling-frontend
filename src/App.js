@@ -11,7 +11,7 @@ import Dashboard from "./pages/admin/Dashboard";
 import ProductsAdminPage from "./pages/admin/ProductsAdminPage";
 import CreateNewProduct from "./pages/admin/CreateNewProduct";
 import UpdatePage from "./pages/admin/UpdatePage";
-import DeletePage from "./pages/admin/DeletePage";
+
 
 
 
@@ -28,7 +28,6 @@ function App() {
           <Route path="/admin" element={<Dashboard />} />
           <Route path="/admin/products/" element={<ProductsAdminPage />} />
           <Route path="/admin/update/:id" element={<UpdatePage />} />
-          <Route path="/admin/delete/:id" element={<DeletePage />} />
           <Route path="/admin/create" element={<CreateNewProduct />} />
           <Route path="*" element={<Navigate to="/admin" />} />
         </Routes>

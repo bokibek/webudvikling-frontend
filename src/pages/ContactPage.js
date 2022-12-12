@@ -1,19 +1,19 @@
 export default function ContactPage() {
   return (
-    <body>
-      <section className="contact-page">
+    <section className="page">
+      <article>
         <h1>Contact Us</h1>
-        <article>
-          <h2>Let us help!</h2>
-          <ul>
-            <li>Have a general question or concern?</li>
-            <li>Want to create a custom piece?</li>
-            <li>Looking for a gift and don't know where to begin?</li>
-            <li>Need style advice?</li>
-          </ul>
-          <p>Fill out the provided form and we will contact you ASAP.</p>
-        </article>
+        <h2>Let us help!</h2>
+        <ul>
+          <li>Have a general question or concern?</li>
+          <li>Want to create a custom piece?</li>
+          <li>Looking for a gift and don't know where to begin?</li>
+          <li>Need style advice?</li>
+        </ul>
+        <p>Fill out the provided form and we will contact you ASAP.</p>
+      </article>
 
+      <section>
         <article>
           <form>
             <input type="text" name="name" placeholder="Name"></input>
@@ -24,6 +24,6 @@ export default function ContactPage() {
           </form>
         </article>
       </section>
-    </body>
+    </section>
   );
 }

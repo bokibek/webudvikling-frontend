@@ -18,16 +18,18 @@ export default function SignInPage({ setAuth }) {
   return (
     <section className="page">
       <h1>Sign In</h1>
-      <form onSubmit={signIn}>
-        <input type="email" name="mail" placeholder="Type your mail" />
-        <input
-          type="password"
-          name="password"
-          placeholder="Type your password"
-        />
-        <p className="text-error">{errorMessage}</p>
-        <button>Sign in</button>
-      </form>
+      <article>
+        <form onSubmit={signIn}>
+          <input type="email" name="mail" placeholder="Type your mail" />
+          <input
+            type="password"
+            name="password"
+            placeholder="Type your password"
+          />
+          <p className="text-error">{errorMessage}</p>
+          <button>Sign in</button>
+        </form>
+      </article>
     </section>
   );
 }

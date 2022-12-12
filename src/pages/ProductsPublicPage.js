@@ -20,15 +20,15 @@ export default function ProductsPublicPage() {
   }, []); // stop from recalling and loop
 
   return (
-    <body className="page">
+
       <section>
         <h1>Products Page</h1>
-        <section className="grid-container">
+        <article className="grid-container">
           {products.map((productObj) => (
             <ProductPublic product={productObj} key={productObj.id} />
           ))}
-        </section>
+        </article>
       </section>
-    </body>
+
   );
 }
