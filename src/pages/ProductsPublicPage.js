@@ -1,8 +1,10 @@
 import { useEffect, useState } from "react"; //useState DOM manipulation, useEffect når man skal fetche data
 import ProductPublic from "../components/ProductPublic";
 
+
 export default function ProductsPublicPage() {
   const [products, setProducts] = useState([]); // state to handle the data (users)
+
   // users: name of the state
   // setUsers: name of the function to set the state
 
@@ -19,6 +21,8 @@ export default function ProductsPublicPage() {
     getData();
   }, []); // stop from recalling and loop
 
+
+
   return (
 
       <section>
@@ -27,6 +31,7 @@ export default function ProductsPublicPage() {
           {products.map((productObj) => (
             <ProductPublic product={productObj} key={productObj.id} />
           ))}
+         
         </article>
       </section>
 
