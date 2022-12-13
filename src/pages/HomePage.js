@@ -24,22 +24,14 @@ export default function HomePage() {
         <h2>Shop By Category</h2>
         <article className="shop-by-category-container">
           <div>
-            <a
-              href="https://eur.shein.com/pdsearch/earrings/?ici=s1`EditSearch`earrings`_fb`d0`PageSearchResult&scici=Search~~EditSearch~~1~~earrings~~~~0&src_identifier=st%3D2%60sc%3Dearrings%60sr%3D0%60ps%3D1&src_module=search&src_tab_page_id=page_search1670845549906"
-              target="blank"
-            >
+            <a href="/products">
               <img
                 src="https://firebasestorage.googleapis.com/v0/b/eksamens-projekt-d596b.appspot.com/o/slider%2Fearring.webp?alt=media&token=f2d025b1-9a31-4c1b-b6ea-44d5e1f9e0a7"
                 alt="earrings"
               ></img>
             </a>
             <h3>
-              <a
-                href="https://eur.shein.com/pdsearch/earrings/?ici=s1`EditSearch`earrings`_fb`d0`PageSearchResult&scici=Search~~EditSearch~~1~~earrings~~~~0&src_identifier=st%3D2%60sc%3Dearrings%60sr%3D0%60ps%3D1&src_module=search&src_tab_page_id=page_search1670845549906"
-                target="blank"
-              >
-                Earrings
-              </a>
+              <a href="/products">Earrings</a>
             </h3>
           </div>
 
@@ -105,15 +97,15 @@ export default function HomePage() {
         </article>
       </section>
 
-      <section>
-        <article className="footer">
+      <section className="footer">
+        <article>
           <footer>
-            <ul className="quick-links">
+            <p className="quick-links">
               <h2>Quick Links</h2>
-              <li>Search</li>
-              <li>About Us</li>
-              <li>Contact Us</li>
-            </ul>
+              <p>About Us</p>
+              <p>Contact Us</p>
+              <p>This is a footer</p>
+            </p>
           </footer>
         </article>
       </section>

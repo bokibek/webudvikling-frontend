@@ -11,6 +11,7 @@ import Dashboard from "./pages/admin/Dashboard";
 import ProductsAdminPage from "./pages/admin/ProductsAdminPage";
 import CreateNewProduct from "./pages/admin/CreateNewProduct";
 import UpdatePage from "./pages/admin/UpdatePage";
+import BuyPage from "./pages/BuyPage";
 
 
 
@@ -43,6 +44,7 @@ function App() {
           <Route path="/" element={<HomePage />} />
           <Route path="/about" element={<AboutPage />} />
           <Route path="/products" element={<ProductsPublicPage />} />
+          <Route path="/buy" element={<BuyPage />} />
           <Route path="/contact" element={<ContactPage />} />
           <Route path="/sign-in" element={<SignInPage setAuth={setIsAuth} />} />
           <Route path="*" element={<Navigate to="/" />} />

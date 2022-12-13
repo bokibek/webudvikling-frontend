@@ -118,6 +118,8 @@ img {
 .footer {
   background-color: var(--green);
   padding: 1em;
+  color: var(--text-color-light);
+  text-align: center;
 }
 
 /* ---------- animations ---------- */
