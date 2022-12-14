@@ -13,6 +13,7 @@ import CreateNewProduct from "./pages/admin/CreateNewProduct";
 import UpdatePage from "./pages/admin/UpdatePage";
 import BuyPage from "./pages/BuyPage";
 
+
 function App() {
   const [isAuth, setIsAuth] = useState(localStorage.getItem("isAuth")); // default value comes from localStorage
 
@@ -20,7 +21,6 @@ function App() {
   const privateRoutes = (
     <>
       <NavAdmin setAuth={setIsAuth} />
-
       <Routes>
         <Route path="/admin" element={<Dashboard />} />
         <Route path="/admin/products/" element={<ProductsAdminPage />} />

@@ -13,8 +13,8 @@ export default function ContactPage() {
         <p>Fill out the provided form and we will contact you ASAP.</p>
       </article>
 
-      <section>
-        <article>
+      
+        <article className="contact-form">
           <form>
             <input type="text" name="name" placeholder="Name"></input>
             <input type="email" name="mail" placeholder="Email"></input>
@@ -23,7 +23,7 @@ export default function ContactPage() {
             <button>Submit</button>
           </form>
         </article>
-      </section>
+      
     </section>
   );
 }

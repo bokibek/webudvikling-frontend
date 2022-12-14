@@ -31,7 +31,7 @@ export default function ProductAdmin({ product, reload }) {
     <article>
       <img src={product.image} alt={product.title} />
       <h2>{product.title}</h2>
-      <p>DKK {product.price},-</p>
+      <p>{product.price} DKK</p>
       <button onClick={showUpdate} id="update-btn">
         Update
       </button>

@@ -15,14 +15,15 @@ export default function HomePage() {
             variableWidth: true,
             autoplay: true,
             autoplaySpeed: 3000,
+            adaptiveHeight: true,
             arrows: false, //removes arrows from sides
           }}
         />
       </article>
 
-      <section className="page">
+      <article>
         <h2>Shop By Category</h2>
-        <article className="shop-by-category-container">
+        <article className="grid-container">
           <div>
             <a href="/products">
               <img
@@ -31,7 +32,7 @@ export default function HomePage() {
               ></img>
             </a>
             <h3>
-              <a href="/products">Earrings</a>
+              <a href="/products">Earrings &rarr;</a>
             </h3>
           </div>
 
@@ -50,7 +51,7 @@ export default function HomePage() {
                 href="https://eur.shein.com/pdsearch/Necklace/?ici=s1`SuggestionSearchCategory`Necklace%20in%20Necklaces`_fb`d0`PageSearchResult&scici=Search~~SuggestionCategorySearch~~1~~Necklace~~SPcSearchWordsSuggest~~0&search_cat=Necklaces&search_id=1755&src_identifier=st%3D7%60sc%3DNecklace%60sr%3D0%60ps%3D1&src_module=search&src_tab_page_id=page_search1670846198222"
                 target="blank"
               >
-                Necklaces
+                Necklaces &rarr;
               </a>
             </h3>
           </div>
@@ -70,7 +71,7 @@ export default function HomePage() {
                 href="https://eur.shein.com/pdsearch/Rings/?ici=s1`SuggestionSearchCategory`Rings%20in%20Rings`_fb`d0`PageSearchResult&scici=Search~~SuggestionCategorySearch~~1~~Rings~~SPcSearchWordsSuggest~~0&search_cat=Rings&search_id=1759&src_identifier=st%3D7%60sc%3DRings%60sr%3D0%60ps%3D1&src_module=search&src_tab_page_id=page_search1670846211456"
                 target="blank"
               >
-                Rings
+                Rings &rarr;
               </a>
             </h3>
           </div>
@@ -90,25 +91,21 @@ export default function HomePage() {
                 href="https://eur.shein.com/pdsearch/Accessories/?ici=s1%60SuggestionSearch%60Accessories%60_fb%60d0%60PageSearchResult&scici=Search~~SuggestionSearch~~1~~Accessories~~SPcSearchWordsSuggest~~0&src_identifier=st%3D4%60sc%3DAccessories%60sr%3D0%60ps%3D5&src_module=search&src_tab_page_id=page_search1670846334504&child_cat_id=3337"
                 target="blank"
               >
-                Accessories
+                Accessories &rarr;
               </a>
             </h3>
           </div>
         </article>
-      </section>
+      </article>
 
-      <section className="footer">
-        <article>
-          <footer>
-            <p className="quick-links">
-              <h2>Quick Links</h2>
-              <p>About Us</p>
-              <p>Contact Us</p>
-              <p>This is a footer</p>
-            </p>
-          </footer>
-        </article>
-      </section>
+      <article>
+        <footer className="footer">
+          <h2>Quick Links</h2>
+          <p>About Us</p>
+          <p>Contact Us</p>
+          <p>This is a footer</p>
+        </footer>
+      </article>
     </section>
   );
 }

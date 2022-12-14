@@ -5,7 +5,7 @@ export default function AboutPage() {
         <h1>About Us</h1>
         <p>
           At our shop, we provide you with an excellent shopping experience as
-          our clients’ satisfaction matters a lot. We have the perfect
+          our clients satisfaction matters a lot. We have the perfect
           combination of accesories that are tailored to meet your needs through
           our standard shopping practice. Even if you are not sure of what you
           want, our e-shop has several ways to help you identify your needs.

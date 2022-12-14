@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import Counter from "../components/Counter";
 
-export default function UserPage() {
+export default function BuyPage() {
   const [product, setUser] = useState([]); // state to handle the data (product)
   const params = useParams();
   const url = `https://eksamens-projekt-d596b-default-rtdb.europe-west1.firebasedatabase.app/product/${params.id}.json`;
