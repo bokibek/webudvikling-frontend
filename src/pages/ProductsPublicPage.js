@@ -25,7 +25,7 @@ export default function ProductsPublicPage() {
 
   return (
 
-      <section>
+      <section className="page">
         <h1>Products Page</h1>
         <article className="grid-container">
           {products.map((productObj) => (

@@ -202,7 +202,6 @@ nav a.active {
 
 .slider {
  padding-top: 58px;
- padding-bottom: 0;
 }
 
 .grid-container > div {
@@ -264,7 +263,7 @@ button {
   margin: 1em auto 0;
 }
 
-button.btn-outline {
+/* button.btn-outline {
   background-color: var(--light-green);
   color: var(--green);
   border: solid 2px var(--green);
@@ -277,7 +276,7 @@ button.btn-outline {
   cursor: pointer;
   font-size: 0.7em;
   padding: 2.032em 1em;
-}
+} */
 
 input {
   margin: 1em auto;
@@ -300,12 +299,12 @@ input {
   cursor: pointer;
 }
 
-form .file-input {
+/* form .file-input {
   display: none;
-}
+} */
 
 /* ---------- loader styling ---------- */
-.loader {
+/* .loader {
   position: fixed;
   left: 0px;
   top: 0px;
@@ -315,7 +314,7 @@ form .file-input {
   overflow: hidden;
   background: var(--loader-background-color);
   text-align: center;
-}
+} */
 
 .spinner {
   border: 5px solid var(--light-green);

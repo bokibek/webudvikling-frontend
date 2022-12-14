@@ -15,7 +15,7 @@ export default function BuyPage() {
       setUser(data); // set the state with fetched data
     }
     getUser();
-  }, [url]); // <--- "[]" VERY IMPORTANT!!!
+  }, [url]); 
 
   return (
     <section className="page">

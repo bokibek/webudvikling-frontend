@@ -1,4 +1,5 @@
 import HomePageSlider from "../components/Slider";
+import { SocialIcon } from "react-social-icons";
 
 export default function HomePage() {
   return (
@@ -104,6 +105,12 @@ export default function HomePage() {
           <p>About Us</p>
           <p>Contact Us</p>
           <p>This is a footer</p>
+          <article>
+            <SocialIcon url="https://twitter.com/" />
+            <SocialIcon url="https://www.facebook.com/" />
+            <SocialIcon url="https://www.instagram.com/" />
+            <SocialIcon url="https://linkedin.com" />
+          </article>
         </footer>
       </article>
     </section>
