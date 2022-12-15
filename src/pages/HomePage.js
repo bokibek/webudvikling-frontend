@@ -4,7 +4,7 @@ import { SocialIcon } from "react-social-icons";
 export default function HomePage() {
   return (
     <section>
-      <article className="slider">
+      <article>
         <HomePageSlider
           options={{
             dots: true,
@@ -17,7 +17,8 @@ export default function HomePage() {
             autoplay: true,
             autoplaySpeed: 3000,
             adaptiveHeight: true,
-            arrows: false, //removes arrows from sides
+            arrows: false,
+            rows: 1,
           }}
         />
       </article>
@@ -99,18 +100,17 @@ export default function HomePage() {
         </article>
       </article>
 
-      <article>
+      <article className="footer-article">
         <footer className="footer">
           <h2>Quick Links</h2>
           <p>About Us</p>
           <p>Contact Us</p>
           <p>This is a footer</p>
-          <article>
-            <SocialIcon url="https://twitter.com/" />
-            <SocialIcon url="https://www.facebook.com/" />
-            <SocialIcon url="https://www.instagram.com/" />
-            <SocialIcon url="https://linkedin.com" />
-          </article>
+
+          <SocialIcon url="https://twitter.com/" />
+          <SocialIcon url="https://www.facebook.com/" />
+          <SocialIcon url="https://www.instagram.com/" />
+          <SocialIcon url="https://linkedin.com" />
         </footer>
       </article>
     </section>

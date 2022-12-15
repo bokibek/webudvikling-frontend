@@ -1,15 +1,12 @@
-import { useState } from "react";
-
-export default function Dashboard() {
-    const count = useState;
+export default function Dashboard({productCount}) {
 
     return (
-        <section className="page">
-            <h1>Admin Dashboard</h1>
-            <article>
-                <p>Bought Items: {count}</p>
-                <span></span>
-            </article>
-        </section>
+      <section className="page">
+        <article className="dashboard-page">
+          <h1 className="text-center">Admin Dashboard</h1>
+          <h2 className="text-center">
+            Items Sold: <span>{productCount}</span></h2>
+        </article>
+      </section>
     );
 }

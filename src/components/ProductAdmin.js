@@ -22,8 +22,7 @@ export default function ProductAdmin({ product, reload }) {
     const response = await fetch(url, { method: "DELETE" });
 
     if (response.ok) {
-      reload();
-      navigate("/admin/products"); // navigate back to products page
+      navigate("/admin"); // navigate back to products page
     }
   }
 
@@ -35,9 +34,7 @@ export default function ProductAdmin({ product, reload }) {
       <button onClick={showUpdate} id="update-btn">
         Update
       </button>
-      <button onClick={showDeleteDialog} id="delete-btn">
-        Delete
-      </button>
+      <button onClick={showDeleteDialog} id="delete-btn">Delete</button>
     </article>
   );
 }

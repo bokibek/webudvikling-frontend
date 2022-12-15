@@ -33,7 +33,7 @@ export default function CreateNewProduct() {
   return (
     <section className="page">
       <article>
-        <h1>Add New Product</h1>
+        <h1 className="text-center">Add New Product</h1>
         <form onSubmit={createProduct}>
           <input
             type="text"

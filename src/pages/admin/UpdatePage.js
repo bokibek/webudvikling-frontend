@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react"; //useState DOM manipulation, useEffect når man skal fetche data
+import { useState, useEffect } from "react"; //useState DOM manipulation, useEffect to fetch data
 import { useNavigate, useParams } from "react-router-dom"; //useNavigate til at navigere til en specifik bruger, useParams (url parameter) til at trække id ud fra product
 
 export default function UpdatePage() {
@@ -44,8 +44,7 @@ export default function UpdatePage() {
   return (
     <body className="page">
   
-      <h2>Update product</h2>
-   
+      <h1 className="text-center">Update product</h1>
       <section>
         <form onSubmit={updateProduct}>
           <input

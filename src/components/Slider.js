@@ -32,12 +32,6 @@ export default function HomePageSlider({ options }) {
               alt="img05"
             />
           </article>
-          <article>
-            <img
-              src="https://firebasestorage.googleapis.com/v0/b/eksamens-projekt-d596b.appspot.com/o/slider%2Fexample8.webp?alt=media&token=ceede943-1385-4b5f-b2da-31aaae7df2d0"
-              alt="img06"
-            />
-          </article>
         </Slider>
     );
 }

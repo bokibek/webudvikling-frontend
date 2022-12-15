@@ -1,8 +1,7 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import Counter from "../components/Counter";
 
-export default function BuyPage() {
+export default function BuyPage({setProductCount}) {
   const [product, setUser] = useState([]); // state to handle the data (product)
   const params = useParams();
   const url = `https://eksamens-projekt-d596b-default-rtdb.europe-west1.firebasedatabase.app/product/${params.id}.json`;
@@ -17,15 +16,21 @@ export default function BuyPage() {
     getUser();
   }, [url]); 
 
+  function incrementCount () {
+    setProductCount (prevCount => prevCount +1);
+  }
+
   return (
-    <section className="page">
-      <article className="product-detail">
+    <section className="grid-container">
+      <article>
+        <h2>Some text about the product</h2>
+        <p>Could also come from the server with a description tag</p>
+      </article>
+      <article>
         <img src={product.image} alt={product.name} />
-        <article>
-          <h1>{product.title}</h1>
-          <p>{product.price}</p>
-          <Counter></Counter>
-        </article>
+        <h1>{product.title}</h1>
+        <p>DKK {product.price}</p>
+        <button onClick={incrementCount}>Buy</button>
       </article>
     </section>
   );

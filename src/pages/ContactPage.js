@@ -1,7 +1,7 @@
 export default function ContactPage() {
   return (
     <section className="page">
-      <article>
+      <article className="contact-page">
         <h1>Contact Us</h1>
         <h2>Let us help!</h2>
         <ul>
@@ -13,17 +13,16 @@ export default function ContactPage() {
         <p>Fill out the provided form and we will contact you ASAP.</p>
       </article>
 
-      
-        <article className="contact-form">
-          <form>
-            <input type="text" name="name" placeholder="Name"></input>
-            <input type="email" name="mail" placeholder="Email"></input>
-            <input type="tel" name="tel" placeholder="Phone number"></input>
-            <input type="text" name="comment" placeholder="Comment"></input>
-            <button>Submit</button>
-          </form>
-        </article>
-      
+      {/* textarea instead of input field */}
+      <article className="contact-form">
+        <form>
+          <input type="text" name="name" placeholder="Name"></input>
+          <input type="email" name="mail" placeholder="Email"></input>
+          <input type="tel" name="tel" placeholder="Phone number"></input>
+          <textarea type="text" name="comment" placeholder="Comment"></textarea>
+          <button>Submit</button>
+        </form>
+      </article>
     </section>
   );
 }
