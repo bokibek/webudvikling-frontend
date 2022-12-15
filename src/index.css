@@ -40,7 +40,7 @@ h3 {
 }
 
 a {
-  color: var(--green);
+  color: var(--text-color-dark);
 }
 
 .page {
