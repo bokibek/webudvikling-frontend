@@ -42,7 +42,7 @@ export default function CreateNewProduct() {
             onChange={(e) => setTitle(e.target.value)}
           />
           <input
-            type="text"
+            type="number"
             value={price}
             placeholder="Type a price"
             onChange={(e) => setPrice(e.target.value)}

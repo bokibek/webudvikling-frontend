@@ -22,7 +22,7 @@ export default function UpdatePage() {
   }, [url]); //kør fetch på en specifik produkt eller et tomt array
 
   async function updateProduct(event) {
-    event.preventDefault();
+    event.preventDefault(); //prevent from html reload
 
     const productToUpdate = {
       // key/price: value from state
@@ -54,7 +54,7 @@ export default function UpdatePage() {
             onChange={(e) => setTitle(e.target.value)}
           />
           <input
-            type="text"
+            type="number"
             value={price}
             placeholder="Type a price"
             onChange={(e) => setPrice(e.target.value)}

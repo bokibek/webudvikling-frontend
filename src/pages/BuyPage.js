@@ -23,13 +23,15 @@ export default function BuyPage({setProductCount}) {
   return (
     <section className="grid-container">
       <article>
-        <h2>Some text about the product</h2>
-        <p>Could also come from the server with a description tag</p>
+        <h1>{product.title}</h1>
+        <img src={product.image} alt={product.name} />
       </article>
       <article>
-        <img src={product.image} alt={product.name} />
-        <h1>{product.title}</h1>
-        <p>DKK {product.price}</p>
+        <h2>Some text about the product</h2>
+        <p>Could also come from the server with a description tag</p>
+        <p>
+          <span>DKK {product.price}</span>
+        </p>
         <button onClick={incrementCount}>Buy</button>
       </article>
     </section>

@@ -4,7 +4,7 @@ import { SocialIcon } from "react-social-icons";
 export default function HomePage() {
   return (
     <section>
-      <article>
+      <article className="slider">
         <HomePageSlider
           options={{
             dots: true,
@@ -18,7 +18,6 @@ export default function HomePage() {
             autoplaySpeed: 3000,
             adaptiveHeight: true,
             arrows: false,
-            rows: 1,
           }}
         />
       </article>

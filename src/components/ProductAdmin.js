@@ -1,6 +1,6 @@
 import { useNavigate } from "react-router-dom"; //useNavigate til at navigere til en specifik side
 
-export default function ProductAdmin({ product, reload }) {
+export default function ProductAdmin({ product }) {
   const navigate = useNavigate();
   const url = `https://eksamens-projekt-d596b-default-rtdb.europe-west1.firebasedatabase.app/product/${product.id}.json`;
   // product is a prop containing product data
@@ -31,10 +31,12 @@ export default function ProductAdmin({ product, reload }) {
       <img src={product.image} alt={product.title} />
       <h2>{product.title}</h2>
       <p>{product.price} DKK</p>
-      <button onClick={showUpdate} id="update-btn">
+      <button onClick={showUpdate}>
         Update
       </button>
-      <button onClick={showDeleteDialog} id="delete-btn">Delete</button>
+      <button onClick={showDeleteDialog}>
+        Delete
+      </button>
     </article>
   );
 }
