@@ -282,3 +282,22 @@ input {
   display: block;
   cursor: pointer;
 }
+
+/* -------buy page styling---------- */
+
+.grid-container-buypage {
+  display: grid;
+  grid-template-columns: 1fr;
+  font-size: 17px;
+  text-align: center;
+  gap: 5px;
+}
+
+
+@media (min-width: 1200px) {
+  .grid-container-buypage {
+    grid-template-columns: 1fr 1fr;
+    font-size: 18px;
+
+  }
+}

@@ -21,7 +21,7 @@ export default function BuyPage({setProductCount}) {
   }
 
   return (
-    <section className="grid-container">
+    <section className="grid-container-buypage">
       <article>
         <h1>{product.title}</h1>
         <img src={product.image} alt={product.name} />

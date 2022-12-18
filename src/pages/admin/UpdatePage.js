@@ -25,7 +25,7 @@ export default function UpdatePage() {
     event.preventDefault(); //prevent from html reload
 
     const productToUpdate = {
-      // key/price: value from state
+      // key/price/: value from state
       title: title,
       price: price,
       image: image,
@@ -37,7 +37,7 @@ export default function UpdatePage() {
     });
 
     if (response.ok) {
-      navigate("/admin/products/");
+      navigate("/admin/products");
     }
   }
 
@@ -51,7 +51,7 @@ export default function UpdatePage() {
             type="text"
             value={title}
             placeholder="Type a title"
-            onChange={(e) => setTitle(e.target.value)}
+            onChange={(e) => setTitle(e.target.value)} // e is an event handling function
           />
           <input
             type="number"
